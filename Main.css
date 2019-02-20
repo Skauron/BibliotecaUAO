@@ -1,0 +1,124 @@
+/*#region Classes*/
+.body{
+    background-image: url(/Img/library.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.Main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Font{
+    font-family: 'Francois One', sans-serif;
+    color: white;
+}
+.Buttons{
+    font-family: 'Francois One', sans-serif;
+    cursor: pointer;
+    background-color: #bf2f47;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px #902435;
+    padding: 1em 2em 1em 2em;
+}
+.Buttons:hover{
+    background-color: #b32b42;
+}
+.Buttons:active{
+    background-color: #bf2f47;
+    box-shadow: 0 5px #b32b42;
+    transform: translateY(4px);
+}
+.Buttons:focus{
+
+}
+.Column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+.Row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.User-Font{
+    display: flex;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-size: 0.7em;
+}
+.Help-Font{
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.Input{
+    margin-top: 0.5em;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    border-radius: 20px;
+    padding: 1em 8em 1em 2em;
+}
+/*#endregion*/
+
+/*#region IDs*/
+/*#region Welcome-section*/
+#Welcome-main-div{
+    margin-top: 3em;
+}
+#Welcome{
+    font-size: 3em;
+    margin-bottom: 0em;
+}
+#Welcome-description{
+    text-align: center;
+    width: 80%;
+    margin-top: 0em;
+}
+/*#endregion*/
+/*#region Login-section*/
+#Login-main-div{
+    display: flex;
+    justify-content: flex-start;
+}
+#User-div,#Password-div{
+    margin-top: 1em;
+}
+#Login-button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+/*#endregion*/
+/*#region Help-section*/
+#Help-section{
+    display: flex;
+    flex-direction: column;
+}
+#Help-button{
+    border-radius: 100%;
+    color: white;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    border: 2px solid white;
+}
+#Division{
+    width: 30em;
+}
+/*#endregion*/
+/*#endregion*/
+textarea, select, input, button { 
+    outline: none;
+}
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}
