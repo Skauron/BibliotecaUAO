@@ -11,11 +11,11 @@
     align-items: center;
 }
 .Font{
-    font-family: 'Francois One', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: white;
 }
 .Buttons{
-    font-family: 'Francois One', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     cursor: pointer;
     background-color: #bf2f47;
     color: white;
@@ -48,18 +48,18 @@
 }
 .User-Font{
     display: flex;
-    font-family: 'Francois One', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: white;
     font-size: 0.7em;
 }
 .Help-Font{
-    font-family: 'Francois One', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: white;
     font-weight: bold;
 }
 .Input{
     margin-top: 0.5em;
-    font-family: 'Francois One', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: white;
     background-color: rgba(255,255,255,0.3);
     border: none;

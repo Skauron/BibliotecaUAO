@@ -1,0 +1,168 @@
+/*#region Classes*/
+.body{
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#1f1f22, #262122);
+}
+.Font{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 1.8em;
+}
+/*#endregion*/
+
+/*#region IDs*/
+/*#region Select-time-section*/
+#Select-time-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#Select-main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+#Division{
+    width: 45em;
+}
+#Back-Button-div{
+    display: flex;
+    margin-left: 1em;
+}
+#Back-button{
+    margin-top: 1em;
+    height: 2em;
+    cursor: pointer;
+}
+#Back-button:hover{
+    opacity: 0.5;
+}
+#Hidden-button{
+    margin-top: 1em;
+    margin-right: 1em;
+    height: 2em;
+    background-color: #212022;
+}
+/*#region Timer-section*/
+#Timer-section{
+   /* display: flex;
+    justify-content: center;*/
+}
+.chart{
+    position: absolute;
+    left:0;
+    right:0;
+    width:300px;
+    height:300px;
+    margin:auto;
+    margin-top: 2em;
+    z-index: -1;
+}
+#number-time-div{
+    position: absolute;
+    left:0;
+    right:0;
+    width:145px;
+    height:180px;
+    margin:auto;
+    margin-top: 2em;
+    font-size: 3em;
+    z-index: 1;
+}
+#description-time{
+    position: absolute;
+    top: 265px;
+    left:0;
+    right:0;
+    width:195px;
+    height:50px;
+    margin:auto;
+    margin-top: 0em;
+    font-size: 0.8em;
+}
+#min-time{
+    position: absolute;
+    top: 172px;
+    left:0;
+    right:0;
+    width:0px;
+    height:50px;
+    margin:auto;
+    margin-top: 0em;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+/*#endregion*/
+
+/*#region Timer-section*/
+#Buttons-main-column-div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 8.5%;
+    margin-right: 10%;
+    margin-top: 300px;
+    flex-wrap: wrap;
+}
+.Buttons-div-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.Button{
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+    background-color: #3c393b;
+    color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2c292b;
+    border-radius: 10px;
+    padding: 1em 1em 1em 1em;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+.Button:hover{
+    background-color: #5f5c5d;
+    box-shadow: 2px 2px #191718;
+}
+#time-time{
+    font-size: 2em;
+}
+#button-time{
+    font-size: 0.9em;
+}
+#Button-tick-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3em;
+}
+.Button-tick{
+    margin-top: 0.5em;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+    width: 3em;
+    margin-bottom: 0.2em;
+}
+#Confirm-text{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+/*#endregion*/
+/*#endregion*/
+textarea, select, input, button { 
+    outline: none;
+}
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}

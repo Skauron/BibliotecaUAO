@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Biblioteca UAO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../css/time.css">
+    <link rel="shortcut icon" href="../Img/icono.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../js/jquery.easypiechart.js"></script>
+    <script>
+        $(function () {
+            $('.chart').easyPieChart({
+                barColor: function (percent) {
+                    var ctx = this.renderer.getCtx();
+                    var canvas = this.renderer.getCanvas();
+                    var gradient = ctx.createLinearGradient(0, 0, canvas.width / 2, 0);
+                    gradient.addColorStop(0, "#e95680");
+                    gradient.addColorStop(1, "#f27f4d");
+                    return gradient;
+                },
+                trackColor: "#908f91",
+                scaleLength: 8,
+                lineWidth: 12,
+                size: 250,
+            });
+        });
+    </script>
+</head>
+
+<body class="body">
+    <section id="Select-time-section">
+        <div id="Back-Button-div">
+            <img src="../Img/back-arrow-white.png" id="Back-button">
+        </div>
+        <div id="Select-main-div">
+            <a class="Font">Selecciona el tiempo de trabajo</a>
+            <hr id="Division">
+        </div>
+        <div>
+            <img src="../Img/empty.png" id="Hidden-button">
+        </div>
+    </section>
+    <section id="Timer-section">
+        <div id="Timer-main-div">
+            <div id="Clock-div">
+                <div class="chart" data-percent="80" data-scale-color="#999999"></div>
+            </div>
+            <div id="number-time-div">
+                <a class="Font" id="number-time">30</a>
+            </div>
+            <div id="description-time">
+                <a class="Font">Trabajos cortos</a>
+            </div>
+            <div id="min-time">
+                <a class="Font">min</a>
+            </div>
+        </div>
+    </section>
+    <section id="Buttons-section">
+        <div id="Buttons-main-column-div">
+            <div class="Buttons-div-row">
+                <button class="Button">
+                    <a id="time-time">15</a>
+                    <a id="button-time">Minutos</a>
+                </button>
+                <button class="Button">
+                    <a id="time-time">30</a>
+                    <a id="button-time">Minutos</a>
+                </button>
+                <button class="Button">
+                    <a id="time-time">45</a>
+                    <a id="button-time">Minutos</a>
+                </button>
+                <button class="Button">
+                    <a id="time-time">60</a>
+                    <a id="button-time">Minutos</a>
+                </button>
+            </div>
+            <div class="Buttons-div-row">
+                <button class="Button">
+                    <a id="time-time">75</a>
+                    <a id="button-time">Minutos</a>
+                </button>
+                <button class="Button">
+                    <a id="time-time">90</a>
+                    <a id="button-time">Minutos</a>
+                </button>
+                <button class="Button">
+                    <a id="time-time">105</a>
+                    <a id="button-time">Minutos</a>
+                </button>
+                <button class="Button">
+                    <a id="time-time">120</a>
+                    <a id="button-time">Minutos</a>
+                </button>
+            </div>
+        </div>
+        <div id="Button-tick-div">
+                <img src="../Img/tick-button.png" class="Button-tick">
+            <a id="Confirm-text">Confirmar</a>
+        </div>
+    </section>
+</body>
+
+</html>
