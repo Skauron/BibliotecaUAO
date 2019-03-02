@@ -34,7 +34,7 @@
 <body class="body">
     <section id="Select-time-section">
         <div id="Back-Button-div">
-            <img src="../Img/back-arrow-white.png" id="Back-button">
+            <img src="../Img/back-arrow-white.png" id="Back-button" onclick="redirect('../index.html')">
         </div>
         <div id="Select-main-div">
             <a class="Font">Selecciona el tiempo de trabajo</a>
@@ -47,13 +47,13 @@
     <section id="Timer-section">
         <div id="Timer-main-div">
             <div id="Clock-div">
-                <div class="chart" data-percent="80" data-scale-color="#999999"></div>
+                <div class="chart" data-percent="50" data-scale-color="#999999"></div>
             </div>
             <div id="number-time-div">
-                <a class="Font" id="number-time">30</a>
+                <a class="Font" id="number-time">60</a>
             </div>
             <div id="description-time">
-                <a class="Font">Trabajos cortos</a>
+                <a class="Font" id="work-time">Trabajos cortos</a>
             </div>
             <div id="min-time">
                 <a class="Font">min</a>
@@ -63,37 +63,37 @@
     <section id="Buttons-section">
         <div id="Buttons-main-column-div">
             <div class="Buttons-div-row">
-                <button class="Button">
+                <button class="Button" onclick="setTime('15','Trabajos muy cortos',12.5)">
                     <a id="time-time">15</a>
                     <a id="button-time">Minutos</a>
                 </button>
-                <button class="Button">
+                <button class="Button" onclick="setTime('30','Trabajos muy cortos',25)">
                     <a id="time-time">30</a>
                     <a id="button-time">Minutos</a>
                 </button>
-                <button class="Button">
+                <button class="Button" onclick="setTime('45','Trabajos cortos',37.5)">
                     <a id="time-time">45</a>
                     <a id="button-time">Minutos</a>
                 </button>
-                <button class="Button">
+                <button class="Button" onclick="setTime('60','Trabajos cortos',50)">
                     <a id="time-time">60</a>
                     <a id="button-time">Minutos</a>
                 </button>
             </div>
             <div class="Buttons-div-row">
-                <button class="Button">
+                <button class="Button" onclick="setTime('75','Trabajos medios',62.5)">
                     <a id="time-time">75</a>
                     <a id="button-time">Minutos</a>
                 </button>
-                <button class="Button">
+                <button class="Button" onclick="setTime('90','Trabajos medios',75)">
                     <a id="time-time">90</a>
                     <a id="button-time">Minutos</a>
                 </button>
-                <button class="Button">
+                <button class="Button" onclick="setTime('105','Trabajos largos',87.5)">
                     <a id="time-time">105</a>
                     <a id="button-time">Minutos</a>
                 </button>
-                <button class="Button">
+                <button class="Button" onclick="setTime('120','Trabajos largos',100)">
                     <a id="time-time">120</a>
                     <a id="button-time">Minutos</a>
                 </button>
@@ -104,6 +104,8 @@
             <a id="Confirm-text">Confirmar</a>
         </div>
     </section>
+
+    <script src="../js/redirect.js"></script>
 </body>
 
 </html>

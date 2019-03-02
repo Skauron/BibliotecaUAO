@@ -24,14 +24,14 @@
             <div id="Login-main-div" class="Column-center">
                 <div id="User-div">
                     <a class="User-Font">NOMBRE DE USUARIO</a>
-                    <input type="text" name="User" value="Usuario UAO..." class="Input">
+                    <input type="text" name="User" value="" placeholder="Usuario UAO..." class="Input" id="InputUser">
                 </div>
                 <div id="Password-div">
                     <a class="User-Font">CONTRASEÑA</a>
-                    <input type="password" name="Password" value="......." class="Input">
+                    <input type="password" name="Password" value="" class="Input" id="InputPass" onsubmit="login()">
                 </div>
                 <div id="Login-button-div" class="Column-center">
-                    <button id="Login-button" class="Buttons">INICIAR SESIÓN</button>
+                    <button id="Login-button" class="Buttons" onclick="login()">INICIAR SESIÓN</button>
                 </div>
             </div>
         </section>
@@ -43,6 +43,8 @@
             </div>
         </section>
     </div>
+
+    <script src="js/redirect.js"></script>
 </body>
 
 </html>

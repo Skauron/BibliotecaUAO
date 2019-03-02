@@ -1,3 +1,7 @@
+@font-face{
+    font-family: Mosk; src: url('../font/MoskNormal400.ttf');
+    font-family: Mosk; font-weight: bold; src: url('../font/MoskBold700.ttf');
+}
 /*#region Classes*/
 .body{
     background-image: url(/Img/library.jpg);
@@ -11,11 +15,11 @@
     align-items: center;
 }
 .Font{
-    font-family: 'PT Sans', sans-serif;
+    font-family: Mosk;
     color: white;
 }
 .Buttons{
-    font-family: 'PT Sans', sans-serif;
+    font-family: Mosk;
     cursor: pointer;
     background-color: #bf2f47;
     color: white;
@@ -48,23 +52,26 @@
 }
 .User-Font{
     display: flex;
-    font-family: 'PT Sans', sans-serif;
+    font-family: Mosk;
     color: white;
     font-size: 0.7em;
 }
 .Help-Font{
-    font-family: 'PT Sans', sans-serif;
+    font-family: Mosk;
     color: white;
     font-weight: bold;
 }
 .Input{
     margin-top: 0.5em;
-    font-family: 'PT Sans', sans-serif;
+    font-family: Mosk;
     color: white;
     background-color: rgba(255,255,255,0.3);
     border: none;
     border-radius: 20px;
     padding: 1em 8em 1em 2em;
+}
+::placeholder{
+    color: #cccccc;
 }
 /*#endregion*/
 

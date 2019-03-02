@@ -1,5 +1,6 @@
 /*#region Classes*/
 .body{
+    cursor: url('../Img/Cursor_pointer.png'), auto;
     background-color: red; /* For browsers that do not support gradients */
     background-image: linear-gradient(#1f1f22, #262122);
 }
@@ -33,7 +34,7 @@
 #Back-button{
     margin-top: 1em;
     height: 2em;
-    cursor: pointer;
+    cursor: url('../Img/Cursor.png'), auto;
 }
 #Back-button:hover{
     opacity: 0.5;
@@ -111,9 +112,8 @@
     justify-content: space-around;
 }
 .Button{
-    cursor: pointer;
+    cursor: url('../Img/Cursor.png'), auto;
     font-family: 'PT Sans', sans-serif;
-    cursor: pointer;
     background-color: #3c393b;
     color: white;
     border-width: 5px;
@@ -131,6 +131,10 @@
     background-color: #5f5c5d;
     box-shadow: 2px 2px #191718;
 }
+.Button:focus{
+    background-color: #5f5c5d;
+    box-shadow: 2px 2px #191718;
+}
 #time-time{
     font-size: 2em;
 }
@@ -145,16 +149,15 @@
 }
 .Button-tick{
     margin-top: 0.5em;
-    cursor: pointer;
+    cursor: url('../Img/Cursor.png'), auto;
     font-family: 'PT Sans', sans-serif;
-    cursor: pointer;
     width: 3em;
     margin-bottom: 0.2em;
 }
 #Confirm-text{
     font-family: 'PT Sans', sans-serif;
     color: white;
-    cursor: pointer;
+    cursor: url('../Img/Cursor.png'), auto;
     font-size: 0.9em;
 }
 /*#endregion*/
