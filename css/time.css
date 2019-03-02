@@ -1,3 +1,7 @@
+@font-face{
+    font-family: Mosk; src: url('../font/MoskNormal400.ttf');
+    font-family: Mosk; font-weight: bold; src: url('../font/MoskBold700.ttf');
+}
 /*#region Classes*/
 .body{
     cursor: url('../Img/Cursor_pointer.png'), auto;
@@ -5,7 +9,7 @@
     background-image: linear-gradient(#1f1f22, #262122);
 }
 .Font{
-    font-family: 'PT Sans', sans-serif;
+    font-family: Mosk;
     color: white;
     font-size: 1.8em;
 }
@@ -113,7 +117,7 @@
 }
 .Button{
     cursor: url('../Img/Cursor.png'), auto;
-    font-family: 'PT Sans', sans-serif;
+    font-family: Mosk;
     background-color: #3c393b;
     color: white;
     border-width: 5px;
@@ -150,12 +154,12 @@
 .Button-tick{
     margin-top: 0.5em;
     cursor: url('../Img/Cursor.png'), auto;
-    font-family: 'PT Sans', sans-serif;
+    font-family: Mosk;
     width: 3em;
     margin-bottom: 0.2em;
 }
 #Confirm-text{
-    font-family: 'PT Sans', sans-serif;
+    font-family: Mosk;
     color: white;
     cursor: url('../Img/Cursor.png'), auto;
     font-size: 0.9em;
