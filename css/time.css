@@ -1,11 +1,13 @@
 @font-face{
-    font-family: Mosk; src: url('../font/MoskNormal400.ttf');
+    font-family: Mosk; font-weight: normal; src: url('../font/MoskNormal400.ttf');
+}
+@font-face{
     font-family: Mosk; font-weight: bold; src: url('../font/MoskBold700.ttf');
 }
 /*#region Classes*/
 .body{
     cursor: url('../Img/Cursor_pointer.png'), auto;
-    background-color: red; /* For browsers that do not support gradients */
+    background-color: #1f1f22; /* For browsers that do not support gradients */
     background-image: linear-gradient(#1f1f22, #262122);
 }
 .Font{

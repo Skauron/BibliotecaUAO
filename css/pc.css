@@ -1,0 +1,141 @@
+@font-face{
+    font-family: Mosk; font-weight: normal; src: url('../font/MoskNormal400.ttf');
+}
+@font-face{
+    font-family: Mosk; font-weight: bold; src: url('../font/MoskBold700.ttf');
+}
+/*#region Classes*/
+.body{
+    cursor: url('../Img/Cursor_pointer.png'), auto;
+    background-color: #1f1f22; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#1f1f22, #262122);
+}
+.Font{
+    font-family: Mosk;
+    color: white;
+    font-size: 1.8em;
+}
+.Buttons{
+    font-family: Mosk;
+    cursor: url('../Img/Cursor.png'), auto;
+    background-color: #bf2f47;
+    color: white;
+    border: none;
+    border-radius: 0 20px 0 0;
+    box-shadow: 5px 0 #902435;
+    padding: 1em 2em 1em 2em;
+    font-weight: bold;
+}
+.Buttons:hover{
+    background-color: #b32b42;
+}
+.Button-pc{
+    cursor: url('../Img/Cursor.png'), auto;
+    background-color: transparent;
+    border: none;
+    
+}
+#pc{
+    width: 60px;
+}
+/*#endregion*/
+
+/*#region IDs*/
+#Select-time-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#Select-main-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+#Division{
+    width: 45em;
+}
+#active-device-section{
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+#Back-Button-div{
+    display: flex;
+    margin-left: 1em;
+}
+#Back-button{
+    margin-top: 1em;
+    height: 2em;
+    cursor: url('../Img/Cursor.png'), auto;
+}
+#Back-button:hover{
+    opacity: 0.5;
+}
+#Hidden-button{
+    margin-top: 1em;
+    margin-right: 1em;
+    height: 2em;
+    background-color: #212022;
+}
+/*#endregion*/
+/*#region Map-section*/
+#available-div{
+    display: flex;
+    margin-right: 6em;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#available-text{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+#red,#gray{
+    background-color: #bf2f47;
+    width: 100px;
+    height: 20px;
+}
+#gray{
+    background-color: gray;
+}
+/*#endregion*/
+/*#region Confirm-section*/
+#buttom-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+#text-buttom-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 6em;
+    margin-top: 0.9em;
+}
+#silla{
+    margin-right: 5em;
+    margin-top: 0.9em;
+    margin-left: 1em;
+    width: 69px;
+    height: 83px;
+}
+#BIBLIO{
+    color: black;
+    font-size: 1.6em;
+    margin-bottom: 0em;
+}
+#CLICK-CONFIRM{
+    color: white;
+    font-size: 1.3em;
+}
+/*#endregion*/
+textarea, select, input, button { 
+    outline: none;
+}
+:focus { 
+    outline-color: transparent; 
+    outline-style: none;
+}

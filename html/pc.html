@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pc</title>
+    <link rel="shortcut icon" href="../Img/icono.ico">
+    <link rel="stylesheet" href="../css/pc.css">
+</head>
+<body class="body">
+    <section id="Select-time-section">
+        <div id="Back-Button-div">
+            <img src="../Img/back-arrow-white.png" id="Back-button" onclick="redirect('../html/time.html')">
+        </div>
+        <div id="Select-main-div">
+            <a class="Font">Selecciona el lugar de trabajo</a>
+            <hr id="Division">
+        </div>
+        <div>
+            <img src="../Img/empty.png" id="Hidden-button">
+        </div>
+    </section>
+    <section id="map-section">
+        <div id="map-main-div">
+            <div id="map-computers">
+                <button class="Button-pc">
+                    <img id="pc" src="../Img/monitor.png">
+                </button>
+            </div>
+            <div id="available-div">
+                <div id="bar-red">
+                    <div id="red"></div>
+                    <p class="Font" id="available-text">Disponible</p>
+                </div>
+                <div id="bar-red">
+                    <div id="gray"></div>
+                    <p class="Font" id="available-text">No disponible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="confirm-section">
+        <div id="confirma-main-div">
+            <div id="buttom-confirm">
+                <button id="confirm-button" class="Buttons" onclick="redirect('../html/time.html')">
+                    <div id="buttom-div">
+                        <img id="silla" src="../Img/Silla.png">
+                        <div id="text-buttom-div">
+                            <p id="BIBLIO">BIBLIO NUMERO 05</p>
+                            <P id="CLICK-CONFIRM">CLICK PARA CONFIRMAR</P>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/redirect.js"></script>
+</body>
+</html>
