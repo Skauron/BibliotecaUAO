@@ -30,10 +30,9 @@
     background-color: #b32b42;
 }
 .Button-pc{
-    cursor: url('../Img/Cursor.png'), auto;
+    cursor: url('../Img/Cursor_pointer.png'), auto;
     background-color: transparent;
     border: none;
-    
 }
 #pc{
     width: 60px;
@@ -98,7 +97,11 @@
     height: 20px;
 }
 #gray{
-    background-color: gray;
+    background-color: #414546;
+}
+#map-main-div{
+    display: flex;
+    flex-direction: row;
 }
 /*#endregion*/
 /*#region Confirm-section*/
