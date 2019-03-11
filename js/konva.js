@@ -75,6 +75,7 @@ function loadImages(pcs, callback) {
         images[_pc.index].MyW = _pc.width;
         images[_pc.index].MyH = _pc.height;
         images[_pc.index].State = _pc.state;
+        images[_pc.index].id = _pc.index;
     }
 }
 
@@ -88,7 +89,7 @@ function buildStage(images) {
             y: objImg.posY,
             width: objImg.MyW,
             height: objImg.MyH,
-            id: objImg.index
+            name : objImg.index
         });
 
         layer.add(image);
@@ -98,18 +99,19 @@ function buildStage(images) {
     layer.on('mousedown', function (e) {
         const target = e.target;
         document.getElementById("container").style.cursor = 'url("../Img/Cursor.png"), auto';
-        console.log(target);
+        //console.log(target);
         if (target.attrs.image.State == 'busy' || target.attrs.image.State == 'mapa' || target.attrs.image.State == 'here') {
             console.log("Click en un computador ocupado");
         } else {
-            console.log("antes: " + LastPcClicked);
-            document.getElementById("BIBLIO").innerHTML = "BIBLIO NUMERO " + target.attrs.id;
+            document.getElementById("BIBLIO").innerHTML = "BIBLIO NUMERO " + target.attrs.name;
             target.attrs.image.src = sources['selected'];
             if (LastPcClicked != target.attrs.id) {
-                //Deselecciona el último pc;
+                //document.getElementById(LastPcClicked).attrs.src = sources['free'];
+                console.log(stage.findOne("."+LastPcClicked));
+                var momo = stage.findOne("."+LastPcClicked);
+                console.log(momo);
             }
-            LastPcClicked = target.attrs.id;
-            console.log("despues: " + LastPcClicked);
+            LastPcClicked = target.attrs.name;
         }
     });
     layer.on('mouseover', function (e) {
