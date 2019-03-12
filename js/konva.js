@@ -89,7 +89,7 @@ function buildStage(images) {
             y: objImg.posY,
             width: objImg.MyW,
             height: objImg.MyH,
-            name : objImg.index
+            name: objImg.index
         });
 
         layer.add(image);
@@ -97,21 +97,20 @@ function buildStage(images) {
 
     stage.add(layer);
     layer.on('mousedown', function (e) {
-        const target = e.target;
-        document.getElementById("container").style.cursor = 'url("../Img/Cursor.png"), auto';
+        let target = e.target;
         //console.log(target);
         if (target.attrs.image.State == 'busy' || target.attrs.image.State == 'mapa' || target.attrs.image.State == 'here') {
             console.log("Click en un computador ocupado");
         } else {
-            document.getElementById("BIBLIO").innerHTML = "BIBLIO NUMERO " + target.attrs.name;
-            target.attrs.image.src = sources['selected'];
-            if (LastPcClicked != target.attrs.id) {
-                //document.getElementById(LastPcClicked).attrs.src = sources['free'];
-                console.log(stage.findOne("."+LastPcClicked));
-                var momo = stage.findOne("."+LastPcClicked);
-                console.log(momo);
+            if (target.attrs.id != LastPcClicked) {
+                document.getElementById("BIBLIO").innerHTML = "BIBLIO NUMERO " + target.attrs.name;
+                target.attrs.image.src = sources['selected'];
+                if ((LastPcClicked != target.attrs.id) && (LastPcClicked != 0)) {
+                    stage.findOne("." + LastPcClicked).attrs.image.src = sources["free"]
+                }
+                LastPcClicked = target.attrs.name;
             }
-            LastPcClicked = target.attrs.name;
+            target.attrs.image.src = sources['selected'];
         }
     });
     layer.on('mouseover', function (e) {
